@@ -21,7 +21,7 @@
 
 3. Rebuild the font file:
 
-      python mdafont.py -r modified_font_file.bin
+       python mdafont.py -r modified_font_file.bin
 
 4. Burn the font file onto an 8K (or larger) EPROM/EEPROM.
 
