@@ -13,7 +13,7 @@
 
 1. First, split the rom file:
 
-    python mdafont.py -e IBM_5788005_AM9264_1981_CGA_MDA_CARD.bin
+       python mdafont.py -e IBM_5788005_AM9264_1981_CGA_MDA_CARD.bin
 
    This will create several files: bigfont.png, thickfont.png, thinfont.png 
 
@@ -21,7 +21,7 @@
 
 3. Rebuild the font file:
 
-    python mdafont.py -r modified_font_file.bin
+      python mdafont.py -r modified_font_file.bin
 
 4. Burn the font file onto an 8K (or larger) EPROM/EEPROM.
 
