@@ -4,17 +4,16 @@
 
  This rom file is used on both the IBM Monochrome Display Adapter and the IBM Color Graphics Adapter.
 
-
  The three files created are bigfont.png, thickfont.png, thinfont.png.
 
- bigfont.png is the MDA font, and thickfont.png is the CGA font. (thinfont.png is normally unused.)
+ bigfont.png is the 8x14 MDA font, and thickfont.png is the 8x8 CGA font. (The 8x8 thinfont.png is normally unused.)
 
  
 # Usage:
 
 1. First, split the rom file:
 
-   # python mdafont.py -e IBM_5788005_AM9264_1981_CGA_MDA_CARD.bin
+    python mdafont.py -e IBM_5788005_AM9264_1981_CGA_MDA_CARD.bin
 
    This will create several files: bigfont.png, thickfont.png, thinfont.png 
 
@@ -22,11 +21,11 @@
 
 3. Rebuild the font file:
 
-   # python mdafont.py -r modified_font_file.bin
+    python mdafont.py -r modified_font_file.bin
 
 4. Burn the font file onto an 8K (or larger) EPROM/EEPROM.
 
-5. Connect the EPROM/EEPROM to your MDA/CGA card. It uses a 9264 pinout, which is annoying. The easiest way to do this is to get a standard 27(C)64 or 27(C)64, and an adapter. I used the 2364 adapter from RETRO Innovations: http://store.go4retro.com/2364-adapter/
+5. Connect the EPROM/EEPROM to your MDA/CGA card. It uses a 9264 pinout, which is annoying. The easiest way to do this is to get a standard 27(C)64 or 27(C)64, and an adapter. I used [the 2364 adapter from RETRO Innovations](http://store.go4retro.com/2364-adapter/).
 
 # deathgen2mda
 
@@ -44,3 +43,11 @@ and it will generate the bigfont.png file.
 # License
 
 All code is licensed under the GPL version 3, and the data file IBM_5788005_AM9264_1981_CGA_MDA_CARD.BIN is copyright 1981 IBM. 
+
+# Links
+
+* [MDA adapter information from John Elliott](https://www.seasip.info/VintagePC/mda.html)
+* [minuszerodegree's PC ROM files page](http://www.minuszerodegrees.net/rom/rom.htm)
+* [Wikipedia: Monochrome Display Adapter](https://en.wikipedia.org/wiki/IBM_Monochrome_Display_Adapter)
+* [2364 Adapter from RETRO Innovations](http://store.go4retro.com/2364-adapter/)
+* [My twitter thread on why the MDA ROM has 3 fonts but can only use 1](https://twitter.com/Foone/status/1347045768478089218)
